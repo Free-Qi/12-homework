@@ -1,0 +1,628 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    /*background-color: rgb(242, 242, 242);*/
+    background: url("../../../../../img/bgImg.png") no-repeat;
+    background-size: cover;
+
+}
+
+ul, li {
+    list-style-type: none;
+}
+
+/*导航栏*/
+.contain {
+    width: 1400px;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    margin: auto;
+
+}
+
+#nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin-bottom: 60px;
+    width: 100%;
+    height: 100px;
+    background-color: white;
+    opacity: 0.9;
+    z-index: 1000000000000000000;
+    transition: all .8s;
+    overflow: hidden;
+}
+
+#logo {
+
+    cursor: pointer;
+    background: url("../../../../../img/logo.png") no-repeat;
+    width: 80px;
+    height: 100px;
+    background-size: contain;
+    vertical-align: middle;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 100px;
+}
+
+#nav_ul {
+    display: inline-block;
+    height: 100%;
+    line-height: 100px;
+    overflow: hidden;
+    margin-left: 120px;
+    vertical-align: middle;
+
+}
+
+#nav_ul li {
+    cursor: pointer;
+    display: inline-block;
+    height: 100px;
+    width: 80px;
+    text-align: center;
+    line-height: 100px;
+    float: left;
+    color: rgb(65, 65, 65);
+    font-size: 18px;
+}
+
+#nav_ul li:nth-child(1) {
+    background-color: rgb(250, 250, 250);
+    border-bottom: 3px solid black;
+}
+
+#nav_ul li:hover {
+    background-color: rgb(250, 250, 250);
+}
+
+#nav_right {
+    width: 350px;
+
+    float: right;
+    height: 100px;
+    line-height: 100px;
+}
+
+#write {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    line-height: 100px;
+    border: 1px solid white;
+    margin-top: -15px;
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+#write img {
+    width: 100%;
+    height: 100%;
+    line-height: 100px;
+}
+
+#go {
+    background-color: white;
+    outline: none;
+    vertical-align: middle;
+    margin-left: 50px;
+    width: 150px;
+    height: 50px;
+    font-size: 17px;
+    border-radius: 30px;
+    border: rgb(175, 215, 182) 1px solid;
+    color: rgb(175, 215, 182);
+    display: inline-block;
+    cursor: pointer;
+}
+
+#go:hover {
+    background-color: green;
+    color: white;
+}
+
+#placeholder {
+    width: 100%;
+    height: 150px;
+    opacity: 0.1;
+}
+
+/*5个图片区域*/
+#img-5 {
+    /*padding-bottom: 20px;*/
+    width: 100%;
+    height: 500px;
+    margin-bottom: 60px;
+}
+
+.center {
+    width: 1002px;
+    height: 100%;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.center img {
+    width: 100%;
+    height: 100%;
+    transition: all .5s;
+
+}
+
+#bigimg {
+    width: 500px;
+    height: 500px;
+    display: inline-block;
+    position: relative;
+    float: left;
+    transition: all 1.5s;
+    cursor: pointer;
+}
+
+#img-5_right {
+    display: inline-block;
+    width: 500px;
+    height: 500px;
+    float: left;
+    overflow: hidden;
+    transition: all 1.5s;
+
+}
+
+.center #img-5_right .img_five {
+    width: 250px;
+    height: 250px;
+    float: left;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.img_bottom {
+    width: 100%;
+    height: 85px;
+    background-color: black;
+    opacity: 0.2;
+    position: absolute;
+    bottom: 0;
+    transition: all 1.5s;
+    display: none;
+
+}
+
+.text {
+    font-size: 16px;
+    color: white;
+    position: absolute;
+    left: 15px;
+    bottom: 30px;
+    z-index: 10000;
+    overflow: hidden;
+    transition: all 1.5s;
+    display: none;
+    padding-top: 15px;
+
+}
+
+/*----------web-body------*/
+#web-body {
+    width: 100%;
+    min-height: 800px;
+    margin-bottom: 25px;
+}
+
+.body_head {
+    width: 100%;
+    height: 50px;
+    margin-bottom: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.black {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background-color: black;
+    line-height: 50px;
+    margin-top: 10px;
+    margin-right: 2px;
+    margin-left: 10px;
+    vertical-align: middle;
+
+}
+
+.head_text {
+    text-align: center;
+    width: 150px;
+    margin-top: 15px;
+    height: 30px;
+    display: inline-block;
+    font-weight: bolder;
+    vertical-align: middle;
+
+}
+
+.body_text {
+    width: 100%;
+    height: 250px;
+    margin-bottom: 30px;
+    background-color: white;
+    overflow: hidden;
+
+}
+
+.body_text_left {
+    width: 750px;
+    height: 100%;
+    float: left;
+    position: relative;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.body_text_left_top {
+    font-size: 28px;
+    cursor: pointer;
+    transition: all .2s;
+    font-weight: lighter;
+
+}
+
+.body_text_left_top:hover {
+    color: greenyellow;
+}
+
+.by {
+    font-size: 8px;
+    cursor: pointer;
+    transition: all .2s;
+    font-weight: lighter;
+
+}
+
+.by:hover {
+    color: greenyellow;
+}
+
+.byfather {
+    margin-left: 5px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.lv {
+    color: greenyellow;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+.p {
+    color: rgb(118, 118, 109);
+    font-weight: lighter;
+    position: relative;
+}
+
+.text_foot {
+    position: absolute;
+    left: 5px;
+    bottom: 0px;
+    color: rgb(118, 118, 109);
+    height: 50px;
+    font-weight: lighter;
+}
+
+.body_img {
+    float: left;
+    width: 250px;
+    height: 250px;
+}
+
+.body_img img {
+    width: 100%;
+    height: 100%;
+}
+
+/*分割线3个图片*/
+#three_img {
+    width: 100%;
+    height: 550px;
+    margin-bottom: 40px;
+}
+
+#totle3_img {
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+}
+
+.totle_one {
+    width: 310px;
+    height: 100%;
+    position: relative;
+    background-color: white;
+    display: inline-block;
+}
+
+.img_three {
+    width: 310px;
+    height: 310px;
+    overflow: hidden;
+    position: relative;
+}
+
+.img_three img {
+    width: 100%;
+    height: 100%;
+    transition: all .8s;
+}
+
+/*分割线--人气片刻*/
+#hot_pinke {
+    width: 100%;
+    height: 550px;
+    margin-bottom: 50px;
+}
+
+#totle4_img {
+    width: 100%;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+}
+
+.totle4_one {
+    width: 220px;
+    height: 230px;
+    background-color: white;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.red3 {
+    width: 0px;
+    height: 0px;
+    border-right: 20px solid rgb(225, 105, 109);
+    border-left: 20px solid rgb(239, 239, 239);
+    border-top: 20px solid rgb(239, 239, 239);
+    border-bottom: 20px solid rgb(239, 239, 239);
+    transform: rotate(45deg);
+    position: absolute;
+    left: -20px;
+    top: -20px;
+}
+
+.yuan {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    left: 20px;
+    top: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.yuan img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.yuan_right {
+    width: 100px;
+    height: 80px;
+    position: absolute;
+    left: 110px;
+    top: 70px;
+}
+
+.yuan_right_top {
+    font-size: 17px;
+    font-weight: bolder;
+    width: 100%;
+    height: 30px;
+    transition: all .2s;
+    cursor: pointer;
+}
+
+.yuan_right_top:hover {
+    color: greenyellow;
+}
+
+.yuan_right_bottom {
+    width: 100%;
+    height: 30px;
+    position: absolute;
+    bottom: 0;
+    font-weight: lighter;
+}
+
+.music {
+    background: url("../../../../../img/music.png") no-repeat;
+    width: 47px;
+    height: 18px;
+    background-size: cover;
+    position: absolute;
+    left: 38px;
+    top: 135px;
+    border-radius: 10px;
+}
+
+.more_father {
+    width: 180px;
+    height: 51px;
+    border-radius: 45px;
+    border: 1px solid rgb(161, 207, 169);
+    margin: 30px auto;
+
+}
+
+#more {
+    width: 172px;
+    height: 43px;
+    border-radius: 45px;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    margin: 3px 3px;
+    background-color: rgb(103, 177, 114);
+    color: white;
+    font-size: 17px;
+    font-weight: inherit;
+
+}
+
+#more:hover {
+    background-color: rgb(72, 161, 85);
+}
+
+/*分割线--黑色底部*/
+#blackfoot {
+    width: 100%;
+    height: 150px;
+    background-color: rgb(20, 20, 19);
+    position: relative;
+}
+
+.foot_left {
+    width: 500px;
+    height: 100px;
+    margin-top: 30px;
+    float: left;
+
+}
+
+#logo2 {
+    background: url("../../../../../img/logo2.png");
+    width: 106px;
+    height: 57px;
+    background-size: contain;
+    display: inline-block;
+    cursor: pointer;
+}
+
+#logo2_right {
+    width: 380px;
+    height: 60px;
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+    margin-top: 10px;
+
+}
+
+#logo2_right span, #logo2_right p {
+    margin: 3px;
+    color: rgb(180, 180, 180);
+    cursor: pointer;
+    font-weight: inherit;
+    font-size: 10px;
+}
+
+#logo2_right span:hover {
+    color: white;
+}
+
+#foot_right {
+    width: 400px;
+    height: 100px;
+    margin-top: 30px;
+    float: right;
+
+}
+
+.foot_yuan {
+    border: 1px solid rgb(180, 180, 180);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 25px;
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    background-color: rgb(180, 180, 180);
+}
+
+.foot_yuan:hover {
+    border: 1px solid white;
+    background-color: white;
+}
+
+#logo3 {
+    background: url("../../../../../img/logo3.png") no-repeat;
+    width: 100px;
+    height: 50px;
+    display: inline-block;
+    background-size: cover;
+    cursor: pointer;
+}
+
+#ewm {
+    width: 190px;
+    height: 190px;
+    position: absolute;
+    top: -223px;
+    left: -70px;
+    display: none;
+    transition: all .2s;
+    z-index: 1111111111111111111111;
+}
+
+#ewm img {
+    width: 100%;
+    height: 100%;
+}
+
+.yi {
+    width: 25px;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    left: 10px;
+    top: 0px;
+}
+
+.clear {
+    clear: both;
+}
+
+#up {
+    width: 50px;
+    height: 50px;
+    background-color: rgb(218,218,218);
+    position: fixed;
+    right: 75px;
+    bottom: 200px;
+    border-radius: 50%;
+    display: none;
+    transition: all .5s;
+}
+#up img {
+    width: 70%;
+    height: 70%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -17.5px;
+    margin-left: -17.5px;
+}
+#up:hover{
+    background-color: rgb(129,190,139);
+}
+
